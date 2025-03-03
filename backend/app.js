@@ -14,7 +14,7 @@ config({ path: "./config/config.env" });
 
 app.use(
   cors({
-    origin:"*",
+    origin:["http://localhost:5173","http://localhost:5174","https://relaxed-faloodeh-e27159.netlify.app"],
     method: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
